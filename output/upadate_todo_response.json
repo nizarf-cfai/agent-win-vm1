@@ -1,0 +1,84 @@
+{
+    "success": true,
+    "message": "Todo status updated successfully",
+    "item": {
+        "id": "enhanced-todo-1763875396572-2rqloybb4",
+        "type": "todo",
+        "x": 5860,
+        "y": -2240,
+        "width": 450,
+        "height": "auto",
+        "color": "#ffffff",
+        "description": "Retrieve radiology data for analysis.",
+        "todoData": {
+            "title": "Radiology Data Retrieval",
+            "description": "Retrieve radiology data for analysis.",
+            "todos": [
+                {
+                    "id": "task-1001",
+                    "text": "Prepare parameters for radiology data retrieval",
+                    "status": "finished",
+                    "agent": "Data Analyst Agent",
+                    "subTodos": [
+                        {
+                            "text": "Confirm patient UUID",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Determine correct category code for radiology",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Set modality filters (e.g., CT, MRI, X-Ray)",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Set status filters (e.g., final)",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Set date filters if necessary",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Verify authentication token",
+                            "status": "finished"
+                        }
+                    ]
+                },
+                {
+                    "id": "task-1002",
+                    "text": "curl -X GET 'https://api.bedfordshirehospitals.nhs.uk/fhir-prd/r4/DiagnosticReport?patient=<UUID>&category=http://loinc.org|LP29684-5&modality=http://dicom.nema.org/resources/ontology/DCM|CT&modality=http://dicom.nema.org/resources/ontology/DCM|MRI&status=final&_sort=-date'",
+                    "status": "finished",
+                    "agent": "Data Analyst Agent",
+                    "subTodos": [
+                        {
+                            "text": "Execute HTTP request to retrieve radiology data",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Check HTTP response status code",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Validate the structure of the retrieved DiagnosticReport entries",
+                            "status": "finished"
+                        },
+                        {
+                            "text": "Parse and organize the radiology data",
+                            "status": "finished"
+                        }
+                    ]
+                }
+            ]
+        },
+        "rotation": 0,
+        "createdAt": "2025-11-23T05:23:16.581Z",
+        "updatedAt": "2025-11-23T05:23:49.859Z"
+    },
+    "updated": {
+        "task_id": "task-1002",
+        "index": null,
+        "status": "finished"
+    }
+}

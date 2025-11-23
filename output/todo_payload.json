@@ -1,0 +1,62 @@
+{
+    "title": "Radiology Data Retrieval",
+    "description": "Retrieve radiology data for analysis.",
+    "todos": [
+        {
+            "id": "task-1001",
+            "text": "Prepare parameters for radiology data retrieval",
+            "status": "pending",
+            "agent": "Data Analyst Agent",
+            "subTodos": [
+                {
+                    "text": "Confirm patient UUID",
+                    "status": "pending"
+                },
+                {
+                    "text": "Determine correct category code for radiology",
+                    "status": "pending"
+                },
+                {
+                    "text": "Set modality filters (e.g., CT, MRI, X-Ray)",
+                    "status": "pending"
+                },
+                {
+                    "text": "Set status filters (e.g., final)",
+                    "status": "pending"
+                },
+                {
+                    "text": "Set date filters if necessary",
+                    "status": "pending"
+                },
+                {
+                    "text": "Verify authentication token",
+                    "status": "pending"
+                }
+            ]
+        },
+        {
+            "id": "task-1002",
+            "text": "curl -X GET 'https://api.bedfordshirehospitals.nhs.uk/fhir-prd/r4/DiagnosticReport?patient=<UUID>&category=http://loinc.org|LP29684-5&modality=http://dicom.nema.org/resources/ontology/DCM|CT&modality=http://dicom.nema.org/resources/ontology/DCM|MRI&status=final&_sort=-date'",
+            "status": "pending",
+            "agent": "Data Analyst Agent",
+            "subTodos": [
+                {
+                    "text": "Execute HTTP request to retrieve radiology data",
+                    "status": "pending"
+                },
+                {
+                    "text": "Check HTTP response status code",
+                    "status": "pending"
+                },
+                {
+                    "text": "Validate the structure of the retrieved DiagnosticReport entries",
+                    "status": "pending"
+                },
+                {
+                    "text": "Parse and organize the radiology data",
+                    "status": "pending"
+                }
+            ]
+        }
+    ]
+}
